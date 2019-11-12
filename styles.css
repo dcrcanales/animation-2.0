@@ -8,7 +8,9 @@ html {
 /* estilos barra de menu */
 .nav-link {
   padding: 5px;
+  padding-top: 15px;
   color: white;
+  font-family: "Martel", serif;
   border-bottom-style: solid;
   border-bottom-width: 3px;
   border-bottom-color: black;
@@ -26,6 +28,7 @@ html {
   margin-top: 20%;
 }
 .title {
+  font-family: "Agentur-Display";
   color: white;
   transition-property: opacity;
   transition-duration: 1s, 2s;
@@ -37,10 +40,19 @@ html {
 }
 .text1 {
   color: white;
-  transition-property: color, background-color;
-  transition-duration: 1s, 2s;
-  transition-timing-function: ease-in-out, linear;
 }
-.text1:hover {
-  color: black;
+
+p#text-1 {
+  display: none;
+}
+
+.card {
+  background-color: black;
+  padding-top: 10%;
+}
+.feature-container {
+  display: none;
+}
+.contact-container {
+  display: none;
 }

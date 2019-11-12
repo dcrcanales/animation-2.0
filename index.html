@@ -7,10 +7,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <!-- Type Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap"
       rel="stylesheet"
     />
+
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -31,7 +33,10 @@
       href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap"
       rel="stylesheet"
     />
-    <script src="myScript1.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+
     <title>template</title>
   </head>
   <body>
@@ -40,24 +45,24 @@
       class="nav col-8 justify-content-center mx-auto animated fadeInUp delay-0.5s"
     >
       <li class=" col-6 nav-item">
-        <a class="nav-link active" href="#">Cover</a>
+        <a id="item-1" class="nav-link active" href="#"></a>
       </li>
       <li class=" col-2 nav-item mx-auto">
-        <a class="nav-link" href="#">Home</a>
+        <a id="item-2" class="nav-link" href="#"></a>
       </li>
       <li class=" col-2 nav-item mx-auto">
-        <a class="nav-link" href="#">Features</a>
+        <a id="item-3" class="nav-link" href="#"></a>
       </li>
       <li class="col-2 nav-item mx-auto">
-        <a class="nav-link" href="#">Contact</a>
+        <a id="item-4" class="nav-link" href="#"></a>
       </li>
     </ul>
 
     <!--Texto centrado-->
     <div class="container">
       <div class="col-8 text-center mx-auto">
-        <h1 class="title  animated fadeInDown delay-0.5s">Cover your page.</h1>
-        <p class="text1  animated fadeIn delay-1s">
+        <h1 class="title  animated fadeInDown delay-0.5s">Art of drama.</h1>
+        <p id="text-1" class="text-1 animated fadeIn delay-0.5s">
           At 7.5 million pounds of thrust, the Saturn V is the vehicle which
           allowed man to exist on a body other than our home planet, and at a
           time when doing so required a herculean effort in practical science,
@@ -65,13 +70,73 @@
         </p>
 
         <!--boton con modal-->
-        <a
+        <button
+          id="learn-more"
           href="#"
-          class="btn btn-light stretched-link animated flipInX delay-2s"
-          >Learn more</a
+          type= "button"
+          class="btn btn-light stretched-link animated flipInX delay-1s"
+          >Learn more</buttton
         >
-        <!--modal-->
       </div>
     </div>
+
+
+<!--card group img-->
+    <div id="feature-container" class="feature-container">
+      <div class="col-8 justify-content-center mx-auto">
+        <div class="row">
+
+            <div class="card-deck">
+                <div class="card">
+                  <img src="img/img-1.png" class="card-img-top rounded" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Boys don't cry</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/img-2.jpeg" class="card-img-top rounded" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/img-3.jpeg" class="card-img-top rounded" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+
+      </div>
+    </div>
+   </div>
+
+    <!--forms contact-->
+    <div id="contact-container" class="row">
+    <form class="col-8 justify-content-center mx-auto">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-secondary">Submit</button>
+      </form>
+    </div>
+
+    
   </body>
 </html>
