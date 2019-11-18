@@ -11,7 +11,7 @@ $(document).ready(function() {
 
   var hiddenBox = $("#text-1");
   $("#learn-more").on("click", function(event) {
-    hiddenBox.show();
+    hiddenBox.toggle("slow");
     featuresBox.hide();
     contactBox.hide();
   });

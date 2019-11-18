@@ -29,6 +29,7 @@ html {
 }
 .title {
   font-family: "Agentur-Display";
+  src: url(Agentur-Display.otf);
   color: white;
   transition-property: opacity;
   transition-duration: 1s, 2s;
@@ -53,6 +54,6 @@ p#text-1 {
 .feature-container {
   display: none;
 }
-.contact-container {
+#contact-container {
   display: none;
 }
